@@ -7,6 +7,12 @@ const searchInput = document.getElementById("search");
 const filterSelect = document.getElementById("filter");
 const themeSwitch = document.getElementById("toggle-theme");
 
+themeSwitch.onchange = (e) => {
+  if (e.target.checked) document.documentElement.classList.add("dark");
+  else document.documentElement.classList.remove("dark");
+};
+
+
 // Single in-board floating panel
 const hoverPanel = document.getElementById("hover-detail");
 const panelTitle = document.getElementById("panel-title");
